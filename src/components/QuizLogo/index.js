@@ -1,9 +1,8 @@
-import styled from 'styled-components';
-
 import React from 'react';
+import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
-function Logo({ className }) {
+/* function Logo({ className }) {
   return (
     <svg className={className} width="135" height="67" viewBox="0 0 135 67" fill="none" xmlns="http://www.w3.org/2000/svg">
       <g clipPath="url(#clip0)">
@@ -28,9 +27,13 @@ function Logo({ className }) {
     </svg>
   );
 }
+*/
+function Logo({ logoImage }) {
+  return <img src={logoImage} alt="" />;
+}
 
 Logo.propTypes = {
-  className: PropTypes.string.isRequired,
+  logoImage: PropTypes.string.isRequired,
 };
 
 const QuizLogo = styled(Logo)`

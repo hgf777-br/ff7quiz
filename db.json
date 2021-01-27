@@ -1,7 +1,8 @@
 {
   "bg": "https://ffvii-remake.square-enix-games.com/images/media/screenshots/gallery_full_screen_06.jpg",
+  "logo": "https://ffvii-remake.square-enix-games.com/images/misc/logo_white.png",
   "title": "Quiz Final Fantasy 7 Remake",
-  "description": "Vamos descobrir quem realmente é fã do FF7!",
+  "description": "Vamos descobrir quem é fã do FF7!",
   "questions": [
     {
       "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
