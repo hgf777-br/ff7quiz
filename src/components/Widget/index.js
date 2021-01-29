@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 const Widget = styled.div`
-  margin-top: 24px;
+  margin-top: 10px;
   margin-bottom: 24px;
   border: 1px solid ${({ theme }) => theme.colors.primary};
   background-color: ${({ theme }) => theme.colors.mainBg};
@@ -10,7 +10,7 @@ const Widget = styled.div`
 
   h1, h2, h3 {
     font-size: 16px;
-    font-weight: 700;
+    font-weight: 600;
     line-height: 1;
     margin-bottom: 0;
   }
@@ -25,7 +25,7 @@ Widget.Header = styled.header`
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  padding: 18px 32px;
+  padding: 16px 28px;
   background-color: ${({ theme }) => theme.colors.primary};
   
   * {
@@ -34,7 +34,7 @@ Widget.Header = styled.header`
 `;
 
 Widget.Content = styled.div`
-  padding: 24px 32px 32px 32px;
+  padding: 14px 32px 32px 32px;
   & > *:first-child {
     margin-top: 0;
   }
@@ -52,7 +52,7 @@ Widget.Topic = styled.a`
   text-decoration: none;
   color: ${({ theme }) => theme.colors.contrastText};
   background-color: ${({ theme }) => `${theme.colors.primary}40`};
-  padding: 10px 15px;
+  padding: 6px 12px;
   margin-bottom: 8px;
   cursor: pointer;
   border-radius: ${({ theme }) => theme.borderRadius};

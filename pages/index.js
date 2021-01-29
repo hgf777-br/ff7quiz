@@ -25,11 +25,25 @@ const QuizContainer = styled.div`
 export default function Home() {
   const router = useRouter();
   const [nome, setNome] = React.useState('');
+  const totalQuestions = db.questions.length;
+
+  function questionNumberMix() {
+    const arr = [...Array(totalQuestions).keys()];
+    for (let i = arr.length-1; i > 0; i -= 1) {
+      const j = Math.floor(Math.random() * i);
+      const temp = arr[i];
+      arr[i] = arr[j];
+      arr[j] = temp;
+    }
+    return arr;
+  }
+
+  const questionNumber = questionNumberMix();
 
   return (
     <QuizBackground backgroundImage={db.bg}>
       <QuizContainer>
-        <QuizLogo logoImage={db.logo} />
+        <QuizLogo />
         <Widget>
           <Widget.Header>
             <h1>{db.title}</h1>
@@ -38,19 +52,23 @@ export default function Home() {
             <p>{db.description}</p>
             <form onSubmit={function e(infosDoEvento) {
               infosDoEvento.preventDefault();
-              router.push(`/quiz?nome=${nome}`);
+              router.push({
+                pathname: '/quiz',
+                query: { nome },
+              });
+              {/* router.push(`/quiz?nome=${nome}`); */}
             }}
             >
               <Input
-                nome="nomeDoUsuario"
-                onChange={(infosDoEvento) => setNome(infosDoEvento.target.value) }
+                name="nomeDoUsuario"
+                onChange={(infosDoEvento) => setNome(infosDoEvento.target.value)}
                 placeholder="Me diga seu nome"
                 value={nome}
               />
               <Button
                 type="submit"
-                nome={nome}
                 disable={nome.length === 0}
+                texto={`Vamos Jogar, ${nome} ?`}
               />
             </form>
           </Widget.Content>
@@ -69,8 +87,3 @@ export default function Home() {
     </QuizBackground>
   );
 }
-/*
-<Button type="submit" disabled={nome.length === 0}>
-                {`${nome} Jogar`}
-              </Button>
-*/

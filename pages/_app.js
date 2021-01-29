@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import React from 'react';
 import { createGlobalStyle, ThemeProvider } from 'styled-components';
 import Head from 'next/head';
@@ -29,7 +30,7 @@ const GlobalStyle = createGlobalStyle`
 
 const { theme } = db;
 
-export default function App({ Component, pageProps }) {
+function App({ Component, pageProps }) {
   return (
     <>
       <Head>
@@ -44,3 +45,5 @@ export default function App({ Component, pageProps }) {
     </>
   );
 }
+
+export default App;

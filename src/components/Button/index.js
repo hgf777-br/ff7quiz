@@ -1,10 +1,10 @@
-import React from 'react'
+import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 const ButtonBase = styled.button`
   background-color: ${({ theme }) => theme.colors.secondary};
-  color: ${({ theme }) => theme.colors.contrastText};
+  color: ${({ theme }) => theme.colors.text};
   border-radius: ${({ theme }) => theme.borderRadius};
   border: 0;
   width: 100%;
@@ -26,32 +26,25 @@ const ButtonBase = styled.button`
   }
 `;
 
-function Button({ type, nome, disable }) {
-  console.log(type, nome, disable);
-
+function Button({ type, disable, texto }) {
   if (disable) {
     return (
-      <ButtonBase disabled={disable}>
+      <ButtonBase type={type} disabled={disable}>
         Jogar
       </ButtonBase>
     );
   }
   return (
-    <ButtonBase>
-      Vamos Jogar,
-      {' '}
-      {nome}
-      {' '}
-      ?
+    <ButtonBase type={type} disabled={disable}>
+      {texto}
     </ButtonBase>
   );
 }
 
 Button.propTypes = {
-  nome: PropTypes.string.isRequired,
+  texto: PropTypes.string.isRequired,
   type: PropTypes.oneOf(['submit', 'type', 'button']).isRequired,
   disable: PropTypes.bool.isRequired,
-  children: PropTypes.node.isRequired,
 };
 
 export default Button;

@@ -1,29 +1,116 @@
 {
   "bg": "https://ffvii-remake.square-enix-games.com/images/media/screenshots/gallery_full_screen_06.jpg",
-  "logo": "https://ffvii-remake.square-enix-games.com/images/misc/logo_white.png",
-  "title": "Quiz Final Fantasy 7 Remake",
+
+  "logo": "https://ffvii-remake.square-enix-games.com/images/home/logo.png",
+  "title": "Quiz Final Fantasy VII Remake",
   "description": "Vamos descobrir quem é fã do FF7!",
   "questions": [
     {
-      "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
-      "title": "Como fazer um seletor por id via CSS?",
+      "image": "https://s3.amazonaws.com/prod-media.gameinformer.com/styles/body_default/s3/2019/06/10/9bc79b07/ff7midgar.jpg",
+      "title": "Em qual cidade se passa o jogo?",
       "description": "Essa é pra aquecer",
-      "answer": 2,
+      "answer": 1,
       "alternatives": [
-        ".elemento",
-        "*elemento",
-        "#elemento",
-        "%elemento"
+        "Calm Town",
+        "Midgar",
+        "Wutai",
+        "Junon"
       ]
     },
     {
-      "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
-      "title": "Como fazer um background gradiente com css?",
-      "description": "Faz tempo em haha",
+      "image": "https://static3.srcdn.com/wordpress/wp-content/uploads/2020/05/Final-Fantasy-7-Remake-Who-Is-Marlene-Mom-Barret-Tifa-1.jpg?q=50&fit=crop&w=960&h=500",
+      "title": "Qual é o nome da filha do Barret?",
+      "description": "Mais uma para esquentar.",
+      "answer": 3,
+      "alternatives": [
+         "Lucy",
+         "Melaine",
+         "Jenny",
+         "Marlene"
+      ]
+    },
+    {
+      "image": "https://static.wikia.nocookie.net/finalfantasy/images/b/b1/Collapsed_Sector_7_Plate_4_from_FFVII_Remake.jpg/revision/latest/scale-to-width-down/1000?cb=20200616211740",
+      "title": "Qual o setor da cidade foi destruido?",
+      "description": "Shinra culpou a Avalnche por isso.",
+      "answer": 2,
+      "alternatives": [
+         "Setor 1",
+         "Setor 5",
+         "Setor 7",
+         "Setor 6"
+      ]
+    },
+    {
+      "image": "https://www.gannett-cdn.com/presto/2020/04/09/PREN/c32620ad-36c1-475d-8549-64c617cbe722-Tifa_06.jpg?width=660&height=372&fit=crop&format=pjpg&auto=webp",
+      "title": "Qual o nome do bar da Tiffa?",
+      "description": "Melhor comida do setor 7.",
       "answer": 0,
       "alternatives": [
-         "background: linear-gradient(#e66465, #9198e5);",
-         "background: gradient(#e66465, #9198e5);"
+         "7th Heaven",
+         "Tiffa's Place",
+         "Food Materia",
+         "Nigthies"
+      ]
+    },
+    {
+      "image": "https://criticalhits.com.br/wp-content/uploads/2020/05/final-fantasy-7-remake-como-derrotar-tonberry.jpg",
+      "title": "Como chama o inimigo que te mata com uma faca?",
+      "description": "Pequeno, verde e muito perigoso.",
+      "answer": 2,
+      "alternatives": [
+         "Terpsicolt",
+         "Cutter",
+         "Tonberry",
+         "Hoodlum"
+      ]
+    },
+    {
+      "image": "https://static.wikia.nocookie.net/finalfantasy/images/2/2c/FFVIIR_Shinra_HQ_Entrance.jpg/revision/latest?cb=20200916210244",
+      "title": "Em qual andar as escadas ou o elevedor te levam no predio da SHINRA?",
+      "description": "A caminho do laboratório do Hojo.",
+      "answer": 1,
+      "alternatives": [
+         "andar 57",
+         "andar 59",
+         "andar 61",
+         "andar 63"
+      ]
+    },
+    {
+      "image": "https://gamespot1.cbsistatic.com/uploads/scale_super/1552/15524586/3657226-pull%20ups.jpg",
+      "title": "Quem é o dono do ginásio no Mercado Murado?",
+      "description": "Várias competições legais por lá.",
+      "answer": 3,
+      "alternatives": [
+         "Jay",
+         "Ronnie",
+         "Eddie",
+         "Jules"
+      ]
+    },
+    {
+      "image": "https://gamertweak.com/wp-content/uploads/2020/04/How-To-Change-Characters-In-Final-Fantasy-7-Remake-1.jpg",
+      "title": "Qual o nível máximo dos jogadores?",
+      "description": "Hummm... você chegou lá.",
+      "answer": 2,
+      "alternatives": [
+         "100",
+         "60",
+         "50",
+         "80"
+      ]
+    },
+    {
+      "image": "https://preview.redd.it/76x7ngbhzzt41.jpg?width=960&crop=smart&auto=webp&s=03343b949693c7c629ce31f5fcbb3c0da17b3211",
+      "title": "Qual comida a Jessie queria no seu jantar com o Cloud?",
+      "description": "Jantar Romantico a luz de velas.",
+      "answer": 1,
+      "alternatives": [
+         "Pie",
+         "Pizza",
+         "Chilli",
+         "Pasta"
       ]
     }
   ],
@@ -33,11 +120,13 @@
   "theme": {
     "colors": {
       "primary": "#3f51b5",
-      "secondary": "#ffc107",
-      "mainBg": "#171B35",
+      "primaryLight": "#757de8",
+      "secondary": "#f44336",
+      "mainBg": "#002984",
       "contrastText": "#FFFFFF",
-      "wrong": "#FF5722",
-      "success": "#4CAF50"
+      "text": "#000050",
+      "wrong": "#f50057",
+      "right": "#43a047"
     },
     "borderRadius": "4px"
   }
