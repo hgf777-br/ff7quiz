@@ -8,7 +8,7 @@ const ButtonBase = styled.button`
   border-radius: ${({ theme }) => theme.borderRadius};
   border: 0;
   width: 100%;
-  padding: 10px 16px;
+  padding: 6px 12px;
   font-weight: bold;
   font-size: 14px;
   line-height: 1;
@@ -35,7 +35,7 @@ function Button({ type, disable, texto }) {
     );
   }
   return (
-    <ButtonBase type={type} disabled={disable}>
+    <ButtonBase type={type}>
       {texto}
     </ButtonBase>
   );

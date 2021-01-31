@@ -3,11 +3,11 @@ import styled from 'styled-components';
 
 const SpinnerBase = styled.div`
   margin-right:30px;
-  border: 8px solid ${({ theme }) => theme.colors.primary};
+  border: 6px solid ${({ theme }) => theme.colors.primary};
   border-radius: 50%;
-  border-top: 8px solid ${({ theme }) => theme.colors.mainBg};
-  width: 60px;
-  height: 60px;
+  border-top: 6px solid ${({ theme }) => theme.colors.mainBg};
+  width: 40px;
+  height: 40px;
   
   -webkit-animation: spin 1s linear infinite;
   animation: spin 1s linear infinite;

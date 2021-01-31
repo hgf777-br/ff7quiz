@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { useRouter } from 'next/router';
+import { motion } from 'framer-motion';
 
 import db from '../db.json';
 import Widget from '../src/components/Widget';
@@ -10,11 +11,13 @@ import Footer from '../src/components/Footer';
 import GitHubCorner from '../src/components/GitHubCorner';
 import Input from '../src/components/Input';
 import Button from '../src/components/Button';
+import Link from '../src/components/Link';
+import Counter from '../src/components/Counter';
 
 const QuizContainer = styled.div`
   width: 100%;
   max-width: 350px;
-  padding-top: 45px;
+  padding-top: 10px;
   margin: auto 10%;
   @media screen and (max-width: 500px) {
     margin: auto;
@@ -25,26 +28,21 @@ const QuizContainer = styled.div`
 export default function Home() {
   const router = useRouter();
   const [nome, setNome] = React.useState('');
-  const totalQuestions = db.questions.length;
-
-  function questionNumberMix() {
-    const arr = [...Array(totalQuestions).keys()];
-    for (let i = arr.length-1; i > 0; i -= 1) {
-      const j = Math.floor(Math.random() * i);
-      const temp = arr[i];
-      arr[i] = arr[j];
-      arr[j] = temp;
-    }
-    return arr;
-  }
-
-  const questionNumber = questionNumberMix();
 
   return (
     <QuizBackground backgroundImage={db.bg}>
       <QuizContainer>
-        <QuizLogo />
-        <Widget>
+        <QuizLogo logo={db.logo} />
+        <Widget
+          as={motion.section}
+          transition={{ delay: 0, duration: 0.5 }}
+          variants={{
+            show: { opacity: 1, y: '0' },
+            hidden: { opacity: 0, y: '100%' },
+          }}
+          initial="hidden"
+          animate="show"
+        >
           <Widget.Header>
             <h1>{db.title}</h1>
           </Widget.Header>
@@ -53,10 +51,11 @@ export default function Home() {
             <form onSubmit={function e(infosDoEvento) {
               infosDoEvento.preventDefault();
               router.push({
-                pathname: '/quiz',
+                pathname: '/Quiz',
                 query: { nome },
               });
-              {/* router.push(`/quiz?nome=${nome}`); */}
+              // eslint-disable-next-line no-lone-blocks
+              { /* router.push(`/quiz?nome=${nome}`); */ }
             }}
             >
               <Input
@@ -74,11 +73,37 @@ export default function Home() {
           </Widget.Content>
         </Widget>
 
-        <Widget>
+        <Widget
+          as={motion.section}
+          transition={{ delay: 0.5, duration: 0.5 }}
+          variants={{
+            show: { opacity: 1 },
+            hidden: { opacity: 0 },
+          }}
+          initial="hidden"
+          animate="show"
+        >
           <Widget.Content>
             <h1>Quizes da Galera</h1>
-
-            <p>lorem ipsum dolor sit amet...</p>
+            <ul>
+              {db.external.map((url) => {
+                const [projectName, githubUser] = url
+                  .replace(/\//g, '')
+                  .replace('https:', '')
+                  .replace('.vercel.app', '')
+                  .split('.');
+                return (
+                  <li key={url}>
+                    <Widget.Topic
+                      as={Link}
+                      href={`/Quiz/${projectName}___${githubUser}`}
+                    >
+                      {`${githubUser} / ${projectName}`}
+                    </Widget.Topic>
+                  </li>
+                );
+              })}
+            </ul>
           </Widget.Content>
         </Widget>
         <Footer />

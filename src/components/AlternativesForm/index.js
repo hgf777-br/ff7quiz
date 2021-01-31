@@ -3,13 +3,13 @@ import styled from 'styled-components';
 const AlternativesForm = styled.form`
   label {
     &[data-selected="true"] {
-      background-color: ${({ theme }) => theme.colors.primaryLight};
+      background-color: ${({ theme }) => theme.colors.primary};
       
-      &[data-status="RIGHT"] {
-        background-color: ${({ theme }) => theme.colors.right};
+      &[data-status="SUCCESS"] {
+        background-color: ${({ theme }) => theme.colors.success};
       }
 
-      &[data-status="WRONG"] {
+      &[data-status="ERROR"] {
         background-color: ${({ theme }) => theme.colors.wrong};
       }
     }
@@ -19,7 +19,7 @@ const AlternativesForm = styled.form`
   }
 
   button {
-    margin-top: 24px;
+    margin-top: 12px;
   }
 `;
 

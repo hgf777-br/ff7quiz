@@ -11,13 +11,13 @@ const Widget = styled.div`
   h1, h2, h3 {
     font-size: 16px;
     font-weight: 600;
-    line-height: 1;
+    line-height: 1.5;
     margin-bottom: 0;
   }
   p {
     font-size: 14px;
     font-weight: 400;
-    line-height: 1;
+    line-height: 1.5;
   }
 `;
 
@@ -25,7 +25,7 @@ Widget.Header = styled.header`
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  padding: 16px 28px;
+  padding: 10px 20px;
   background-color: ${({ theme }) => theme.colors.primary};
   
   * {

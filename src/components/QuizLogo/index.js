@@ -1,6 +1,6 @@
+/* eslint-disable react/prop-types */
 import React from 'react';
 import styled from 'styled-components';
-import db from '../../../db.json';
 
 const LogoBase = styled.div`
     display: block;
@@ -10,10 +10,10 @@ const LogoBase = styled.div`
     }
   `;
 
-function QuizLogo() {
+function QuizLogo({ logo }) {
   return (
     <LogoBase>
-      <img src={db.logo} alt="" width={250} />
+      <img src={logo} alt="" width={250} />
     </LogoBase>
   );
 }
