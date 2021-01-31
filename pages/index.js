@@ -12,7 +12,6 @@ import GitHubCorner from '../src/components/GitHubCorner';
 import Input from '../src/components/Input';
 import Button from '../src/components/Button';
 import Link from '../src/components/Link';
-import Counter from '../src/components/Counter';
 
 const QuizContainer = styled.div`
   width: 100%;
@@ -61,13 +60,13 @@ export default function Home() {
               <Input
                 name="nomeDoUsuario"
                 onChange={(infosDoEvento) => setNome(infosDoEvento.target.value)}
-                placeholder="Me diga seu nome"
+                placeholder="Preciso do seu nome"
                 value={nome}
               />
               <Button
                 type="submit"
                 disable={nome.length === 0}
-                texto={`Vamos Jogar, ${nome} ?`}
+                texto={`Vamos Jogar, ${nome}?`}
               />
             </form>
           </Widget.Content>
@@ -85,6 +84,7 @@ export default function Home() {
         >
           <Widget.Content>
             <h1>Quizes da Galera</h1>
+            <p>Outros quizes da imersão com as minhas regras!</p>
             <ul>
               {db.external.map((url) => {
                 const [projectName, githubUser] = url
@@ -98,7 +98,7 @@ export default function Home() {
                       as={Link}
                       href={`/Quiz/${projectName}___${githubUser}`}
                     >
-                      {`${githubUser} / ${projectName}`}
+                      {`${projectName} by ${githubUser}`}
                     </Widget.Topic>
                   </li>
                 );

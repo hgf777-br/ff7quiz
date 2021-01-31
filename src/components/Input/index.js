@@ -4,8 +4,8 @@ import styled from 'styled-components';
 
 const InputBase = styled.input`
   width: 100%;
-  padding: 15px;
-  font-size: 14px;
+  padding: 10px 20px;
+  font-size: 18px;
   border: 1px solid ${({ theme }) => theme.colors.primary};
   color: ${({ theme }) => theme.colors.contrastText};
   background-color: ${({ theme }) => theme.colors.mainBg};

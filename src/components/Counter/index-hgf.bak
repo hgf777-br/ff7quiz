@@ -7,15 +7,30 @@ import animation from '../Ulottie/lotties/stopwatch.json';
 const CounterBase = styled.div`
     display: flex;
     align-items: center;
-    width: 70px;
-    padding: 0px;
+    width: 100px;
     text-align: right;
     @media screen and (max-width: 500px) {
       margin: 0;
     }
   `;
 
-function Counter({ valor }) {
+function Counter({ valorInicial = 10 }) {
+  const [time, setTime] = React.useState(valorInicial);
+
+  function tick() {
+    setTime(time - 1);
+    if (time === 0) {
+      setTime(10);
+    }
+  }
+  // Replaces componentDidMount and componentWillUnmount
+  React.useEffect(() => {
+    const timerID = setInterval(() => tick(), 1000);
+    return function cleanup() {
+      clearInterval(timerID);
+    };
+  });
+
   return (
     <CounterBase>
       <Ulottie
@@ -24,7 +39,7 @@ function Counter({ valor }) {
         height={50}
       />
       <h1>
-        {valor}
+        {time}
       </h1>
     </CounterBase>
   );

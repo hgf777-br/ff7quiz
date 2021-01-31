@@ -3,7 +3,7 @@
 import React from 'react';
 import Lottie from 'react-lottie';
 
-function Ulottie({ animationData }) {
+function Ulottie({ animationData, width = 300, height = 300 }) {
   const defaultOptions = {
     loop: true,
     autoplay: true,
@@ -17,8 +17,8 @@ function Ulottie({ animationData }) {
     <div>
       <Lottie
         options={defaultOptions}
-        height={300}
-        width={300}
+        height={height}
+        width={width}
       />
     </div>
   );

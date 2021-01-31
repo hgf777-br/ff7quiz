@@ -3,7 +3,7 @@
 
   "logo": "https://ffvii-remake.square-enix-games.com/images/home/logo.png",
   "title": "Quiz Final Fantasy VII Remake",
-  "description": "Jogo épico da Square Enix. Ficou tão famoso, com uma legião de fãs de mais de 20 anos, que ganhou este Remake para o PS4. Vamos descobrir quem é fã do FF7!",
+  "description": "Jogo épico da Square Enix. Se tornou um RPG muito famoso e com uma enorme legião de fãs. Em 2020 ganhou este Remake para o PS4. Vamos descobrir quem é fã do FF7R!",
   "questions": [
     {
       "image": "https://s3.amazonaws.com/prod-media.gameinformer.com/styles/body_default/s3/2019/06/10/9bc79b07/ff7midgar.jpg",
@@ -30,7 +30,7 @@
       ]
     },
     {
-      "image": "https://static.wikia.nocookie.net/finalfantasy/images/b/b1/Collapsed_Sector_7_Plate_4_from_FFVII_Remake.jpg/revision/latest/scale-to-width-down/1000?cb=20200616211740",
+      "image": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/final-fantasy-vii-remake/b/bb/Final_Fantasy_VII_Remake_-_Walkthrough_-_Chapter_15_-_2.png?width=640",
       "title": "Qual setor da cidade foi destruido pela SHINRA?",
       "description": "E a Avalanche levou a culpa por isso.",
       "answer": 2,
@@ -43,7 +43,7 @@
     },
     {
       "image": "https://www.gannett-cdn.com/presto/2020/04/09/PREN/c32620ad-36c1-475d-8549-64c617cbe722-Tifa_06.jpg?width=660&height=372&fit=crop&format=pjpg&auto=webp",
-      "title": "Qual o nome do bar da Tiffa?",
+      "title": "Qual o nome do bar da Tifa?",
       "description": "Melhor comida do setor.",
       "answer": 0,
       "alternatives": [
@@ -66,8 +66,8 @@
       ]
     },
     {
-      "image": "https://static.wikia.nocookie.net/finalfantasy/images/2/2c/FFVIIR_Shinra_HQ_Entrance.jpg/revision/latest?cb=20200916210244",
-      "title": "Em qual andar as escadas, ou o elevador, te levam no predio da SHINRA?",
+      "image": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/final-fantasy-vii-remake/e/e9/Final_Fantasy_VII_Remake_-_Walkthrough_-_Chapter_16_-_30.png?width=640",
+      "title": "Em qual andar o elevador, ou as escadas, te levam no predio da SHINRA?",
       "description": "A caminho do laboratório do Hojo.",
       "answer": 1,
       "alternatives": [
@@ -91,7 +91,7 @@
     },
     {
       "image": "https://gamertweak.com/wp-content/uploads/2020/04/How-To-Change-Characters-In-Final-Fantasy-7-Remake-1.jpg",
-      "title": "Qual o nível máximo dos jogadores?",
+      "title": "Qual o nível máximo que os jogadores podem chegar?",
       "description": "Hummm... você chegou lá!",
       "answer": 2,
       "alternatives": [
@@ -143,9 +143,9 @@
       "description": "Cloud possui os mais fortes",
       "answer": 3,
       "alternatives": [
-         "Nova vida após ataque",
+         "Nova vida após um ataque",
          "Magica destrutiva",
-         "Nível adicional de ataque",
+         "Nível adicional ao ataque",
          "Ataque muito poderoso"
       ]
     },
@@ -199,11 +199,11 @@
     }
   ],
   "external": [
-    "https://aluraquiz-css.omariosouto.vercel.app/",
-    "https://aluraquiz-devsoutinho.omariosouto.vercel.app/",
-    "https://disgust-quiz.arrivabeni.vercel.app/",
-    "https://quiz-pokemon.dashpunk.vercel.app/",
-    "https://chessquiz-alura.leo0liveira.vercel.app/"    
+    "https://meta-quiz-imersao-react.markkop.vercel.app/",
+    "https://aluraquiz-simpsons.marcio-bernardes.vercel.app/",
+    "https://bitter-brewing-quiz.afuscella.vercel.app/",
+    "https://starwarsquiz.isaacpontes.vercel.app/",
+    "https://narutoquiz-base.vitor-kb.vercel.app/"    
   ],
   "theme": {
     "colors": {
