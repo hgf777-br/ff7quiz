@@ -3,12 +3,12 @@
 
   "logo": "https://ffvii-remake.square-enix-games.com/images/home/logo.png",
   "title": "Quiz Final Fantasy VII Remake",
-  "description": "Vamos descobrir quem é fã do FF7!",
+  "description": "Jogo épico da Square Enix. Ficou tão famoso, com uma legião de fãs de mais de 20 anos, que ganhou este Remake para o PS4. Vamos descobrir quem é fã do FF7!",
   "questions": [
     {
       "image": "https://s3.amazonaws.com/prod-media.gameinformer.com/styles/body_default/s3/2019/06/10/9bc79b07/ff7midgar.jpg",
       "title": "Em qual cidade se passa o jogo?",
-      "description": "Essa é pra aquecer",
+      "description": "Cidade Suspensa e movida por Mako.",
       "answer": 1,
       "alternatives": [
         "Calm Town",
@@ -20,7 +20,7 @@
     {
       "image": "https://static3.srcdn.com/wordpress/wp-content/uploads/2020/05/Final-Fantasy-7-Remake-Who-Is-Marlene-Mom-Barret-Tifa-1.jpg?q=50&fit=crop&w=960&h=500",
       "title": "Qual é o nome da filha do Barret?",
-      "description": "Mais uma para esquentar.",
+      "description": "Estava sempre no bar da Tifa.",
       "answer": 3,
       "alternatives": [
          "Lucy",
@@ -31,8 +31,8 @@
     },
     {
       "image": "https://static.wikia.nocookie.net/finalfantasy/images/b/b1/Collapsed_Sector_7_Plate_4_from_FFVII_Remake.jpg/revision/latest/scale-to-width-down/1000?cb=20200616211740",
-      "title": "Qual o setor da cidade foi destruido?",
-      "description": "Shinra culpou a Avalnche por isso.",
+      "title": "Qual setor da cidade foi destruido pela SHINRA?",
+      "description": "E a Avalanche levou a culpa por isso.",
       "answer": 2,
       "alternatives": [
          "Setor 1",
@@ -44,13 +44,13 @@
     {
       "image": "https://www.gannett-cdn.com/presto/2020/04/09/PREN/c32620ad-36c1-475d-8549-64c617cbe722-Tifa_06.jpg?width=660&height=372&fit=crop&format=pjpg&auto=webp",
       "title": "Qual o nome do bar da Tiffa?",
-      "description": "Melhor comida do setor 7.",
+      "description": "Melhor comida do setor.",
       "answer": 0,
       "alternatives": [
          "7th Heaven",
          "Tiffa's Place",
          "Food Materia",
-         "Nigthies"
+         "Nigthies Club"
       ]
     },
     {
@@ -67,7 +67,7 @@
     },
     {
       "image": "https://static.wikia.nocookie.net/finalfantasy/images/2/2c/FFVIIR_Shinra_HQ_Entrance.jpg/revision/latest?cb=20200916210244",
-      "title": "Em qual andar as escadas ou o elevedor te levam no predio da SHINRA?",
+      "title": "Em qual andar as escadas, ou o elevador, te levam no predio da SHINRA?",
       "description": "A caminho do laboratório do Hojo.",
       "answer": 1,
       "alternatives": [
@@ -92,7 +92,7 @@
     {
       "image": "https://gamertweak.com/wp-content/uploads/2020/04/How-To-Change-Characters-In-Final-Fantasy-7-Remake-1.jpg",
       "title": "Qual o nível máximo dos jogadores?",
-      "description": "Hummm... você chegou lá.",
+      "description": "Hummm... você chegou lá!",
       "answer": 2,
       "alternatives": [
          "100",
@@ -104,29 +104,117 @@
     {
       "image": "https://preview.redd.it/76x7ngbhzzt41.jpg?width=960&crop=smart&auto=webp&s=03343b949693c7c629ce31f5fcbb3c0da17b3211",
       "title": "Qual comida a Jessie queria no seu jantar com o Cloud?",
-      "description": "Jantar Romantico a luz de velas.",
+      "description": "Jantar Romântico, a luz de velas.",
       "answer": 1,
       "alternatives": [
-         "Pie",
+         "Torta",
          "Pizza",
          "Chilli",
-         "Pasta"
+         "Macarrão"
+      ]
+    },
+    {
+      "image": "https://i2.wp.com/otaconnor.com/wp-content/uploads/2020/02/cloud-falls.png?resize=768%2C407&ssl=1",
+      "title": "Quem salvou o Cloud de cair do prédio da SHINRA?",
+      "description": "Logo depois da luta com Rufus",
+      "answer": 0,
+      "alternatives": [
+         "Tifa",
+         "Aerith",
+         "Jessie",
+         "Barret"
+      ]
+    },
+    {
+      "image": "https://cdn.wccftech.com/wp-content/uploads/2020/03/WCCFfinalfantasy7remake11.jpg",
+      "title": "Aonde o grupo encontrou o RED XIII?",
+      "description": "Cara estranho...",
+      "answer": 1,
+      "alternatives": [
+         "Cidade murada",
+         "Laboratório do Hojo",
+         "Zoo do setor 5",
+         "Mansão do Corneo"
+      ]
+    },
+    {
+      "image": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/final-fantasy-vii-remake/2/2f/Ff7r_limit_break.jpg?width=1600",
+      "title": "O que é um LIMIT BREAK?",
+      "description": "Cloud possui os mais fortes",
+      "answer": 3,
+      "alternatives": [
+         "Nova vida após ataque",
+         "Magica destrutiva",
+         "Nível adicional de ataque",
+         "Ataque muito poderoso"
+      ]
+    },
+    {
+      "image": "https://observatoriodegames.uol.com.br/wp-content/uploads/2020/03/Final-Fantasy-VII-Remake-Inside.jpg",
+      "title": "Quem cresceu na mesma cidade com o Cloud?",
+      "description": "dica: uma menina muito bonita!",
+      "answer": 3,
+      "alternatives": [
+         "Aerith",
+         "Jessie",
+         "Marlene",
+         "Tifa"
+      ]
+    },
+    {
+      "image": "https://www.pcgamesn.com/wp-content/uploads/2019/09/ff7-don-corneo-580x334.jpg",
+      "title": "O que o Don Corneo queria com a Tifa?",
+      "description": "Ele não é uma pessoa do bem.",
+      "answer": 0,
+      "alternatives": [
+         "Casar",
+         "Matar",
+         "Sequestrar",
+         "Contratar"
+      ]
+    },
+    {
+      "image": "https://guides.gamepressure.com/final-fantasy-vii-remake/gfx/word/34024765.jpg",
+      "title": "Quem roubou a carteira do Johnny?",
+      "description": "Ufa, deu muito trabalho recuperar ela.",
+      "answer": 2,
+      "alternatives": [
+         "Tifa",
+         "Elmyra",
+         "Kyrie",
+         "Scarlet"
+      ]
+    },
+    {
+      "image": "https://meups.com.br/wp-content/uploads/2019/11/FINAL-FANTASY-VII-REMAKE-TURKS.jpg",
+      "title": "Qual personagem abaixo não faz parte dos Turks?",
+      "description": "Grupo de elite da SHINRA.",
+      "answer": 0,
+      "alternatives": [
+         "Rufus",
+         "Rude",
+         "Tseng",
+         "Reno"
       ]
     }
   ],
   "external": [
-    ""
+    "https://aluraquiz-css.omariosouto.vercel.app/",
+    "https://aluraquiz-devsoutinho.omariosouto.vercel.app/",
+    "https://disgust-quiz.arrivabeni.vercel.app/",
+    "https://quiz-pokemon.dashpunk.vercel.app/",
+    "https://chessquiz-alura.leo0liveira.vercel.app/"    
   ],
   "theme": {
     "colors": {
-      "primary": "#3f51b5",
-      "primaryLight": "#757de8",
-      "secondary": "#f44336",
-      "mainBg": "#002984",
+      "primary": "#30619c",
+      "primaryLight": "#4d6ba8",
+      "secondary": "#8198c5",
+      "mainBg": "#18314f",
       "contrastText": "#FFFFFF",
       "text": "#000050",
       "wrong": "#f50057",
-      "right": "#43a047"
+      "success": "#43a047"
     },
     "borderRadius": "4px"
   }
