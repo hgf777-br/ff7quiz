@@ -21,9 +21,9 @@ import Counter from '../../components/Counter';
 function LoadingWidget({ nome }) {
   let texto;
   if (nome === undefined) {
-    texto = 'quase lá...';
+    texto = 'embaralhando...';
   } else {
-    texto = `${nome}, quase lá...`;
+    texto = `${nome}, embaralhando...`;
   }
 
   return (
@@ -50,22 +50,34 @@ function ResultWidget({ results, nome }) {
   const router = useRouter();
   const total = results.length;
   const acertos = results.filter((x) => x).length;
+  const idx = Math.round((acertos / total) * 2);
   const animationList = [LowAnimation, MediumAnimation, HighAnimation];
-  const animation = animationList[Math.round((acertos / total) * 2)];
+  const congratsList = ['Está na hora de você jogar FF7R...', 'Parabéns, você está no caminho certo!', 'Você é um verdadeiro Fã!!!'];
+  const animation = animationList[idx];
   let texto;
 
   if (nome === undefined) {
-    texto = `você acertou ${acertos} de ${total} perguntas.`;
+    texto = 'Jogador,';
   } else {
-    texto = `${nome}, você acertou ${acertos} de ${total} perguntas.`;
+    texto = `${nome},`;
   }
   return (
     <Widget>
-      <Widget.Header>
-        <div>
-          {texto}
-        </div>
+      <Widget.Header
+        style={{ padding: '5px 10px 0px 20px' }}
+      >
+        {texto}
       </Widget.Header>
+      <Widget.Header
+        style={{ padding: '0px 10px 10px 20px' }}
+      >
+        {`você acertou ${acertos} de ${total} perguntas.`}
+      </Widget.Header>
+      <Widget.Content>
+        <h1>
+          {congratsList[idx]}
+        </h1>
+      </Widget.Content>
       <Ulottie
         animationData={animation}
       />
@@ -246,6 +258,12 @@ let questionNumber = [];
 
 function QuizPage({ externalQuestions, externalBg, externalLogo }) {
   const [screenState, setScreenState] = React.useState(screenStates.LOADING);
+  // const testResultsL = [false, false, false, false, false, false, false,
+  //  false, false, true, true, true, false, false, false, false];
+  // const testResultsM = [true, true, false, false, true, true, true, false,
+  //  false, true, true, true, false, false, true, true];
+  // const testResultsG = [true, true, false, true, true, true, true, true,
+  //  false, true, true, true, false, true, true, true];
   const [results, setResults] = React.useState([]);
   const totalQuestions = externalQuestions.length;
   const [currentQuestion, setCurrentQuestion] = React.useState(0);

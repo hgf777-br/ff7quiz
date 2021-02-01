@@ -84,7 +84,10 @@ export default function Home() {
         >
           <Widget.Content>
             <h1>Quizes da Galera</h1>
-            <p>Outros quizes da imersão com as minhas regras!</p>
+            <p>
+              Outros quizes da imersão com as minhas regras:
+              limte de tempo por questão e perguntas misturadas!
+            </p>
             <ul>
               {db.external.map((url) => {
                 const [projectName, githubUser] = url
@@ -103,6 +106,14 @@ export default function Home() {
                   </li>
                 );
               })}
+              <li>
+                <Widget.Topic
+                  as={Link}
+                  href="https://aluraquiz-base.alura-challenges.vercel.app/contribuidores"
+                >
+                  Vitrine Alura
+                </Widget.Topic>
+              </li>
             </ul>
           </Widget.Content>
         </Widget>
